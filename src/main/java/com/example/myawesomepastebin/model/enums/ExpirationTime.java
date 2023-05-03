@@ -9,10 +9,18 @@ public enum ExpirationTime {
     ONE_DAY(1L, ChronoUnit.DAYS),
     ONE_WEEK(1L, ChronoUnit.WEEKS),
     ONE_MONTH(1L, ChronoUnit.MONTHS),
-    FOREVER(Long.MAX_VALUE, ChronoUnit.FOREVER);
-    private  Long time;
-    private ChronoUnit chronoUnit;
+    FOREVER(73_000L, ChronoUnit.DAYS);
+    private final Long time;
+    private final ChronoUnit chronoUnit;
 
     ExpirationTime(Long time, ChronoUnit chronoUnit) {
+        this.time = time;
+        this.chronoUnit = chronoUnit;
+    }
+    public Long getTime() {
+        return time;
+    }
+    public ChronoUnit getChronoUnit() {
+        return chronoUnit;
     }
 }
