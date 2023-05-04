@@ -24,7 +24,7 @@ ___
 * Для запуска приложения необходимо выполнить несколько шагов:
   - Клонировать проект и открыть его в среде разработки (например *IntelliJ IDEA*);
   - В файле **application.properties** указать путь к Вашей базе данных;
-  - Запустить метод **main** в файле **MarketplaceApplication.java**.
+  - Запустить метод **main** в файле **MyAwesomePastebinApplication.java**.
 
 После выполнения всех шагов, приложение будет доступно через swagger.
 Swagger будет доступен по адресу: http://localhost:8080/swagger-ui/index.html
